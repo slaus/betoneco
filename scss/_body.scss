@@ -1,0 +1,177 @@
+/*!
+ * Body content
+ */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Cuprum', sans-serif;
+  color: $black;
+  font-size: 22px;
+  font-variant: small-caps;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+/* error if tags without attr */
+img:not([alt]),
+label:not([for]),
+input[type=submit]:not([value]) {
+  outline: 1px dotted red;
+}
+
+/* error if first child not used  */
+ul > *:not(li),
+ol > *:not(li),
+dl > *:not(dt):not(dd) {
+  outline: 1px dotted red;
+}
+
+input:focus, textarea, a, button {
+  outline: none !important;
+  //-webkit-appearance: none !important; //trouble with radiobutton
+}
+
+.clearfix {
+
+  &:after,
+  &:before {
+    content: "";
+    display: table;
+    height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+#back-to-top {
+  width: 56px;
+  height: 56px;
+  color: $white;
+  background-color: $blue;
+  background-image: linear-gradient(to top, $blue 0%, $blue-light 100%);
+  box-shadow: 0 0 9px 1px rgba(44, 169, 226, 0.4);
+  text-transform: uppercase;
+  position: fixed;
+  right: 54px;
+  bottom: 150px;
+  border-radius: 10%;
+  line-height: 58px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+
+  &:hover {
+    background-color: $blue;
+    background-image: linear-gradient(to top, $blue-light 0%, $blue 100%);
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+a {
+  transition: .4s;
+}
+
+.relative {
+  position: relative;
+}
+
+.padding {
+
+  &-top {
+    &-20 {
+      padding-top: 20px;
+    }
+    &-30 {
+      padding-top: 30px;
+    }
+    &-40 {
+      padding-top: 40px;
+    }
+  }
+  &-bottom {
+    &-20 {
+      padding-bottom: 20px;
+    }
+    &-30 {
+      padding-bottom: 30px;
+    }
+    &-40 {
+      padding-bottom: 40px;
+    }
+  }
+  &-left {
+    &-0 {
+      padding-left: 0;
+    }
+  }
+  &-right {
+    &-0 {
+      padding-right: 0;
+    }
+  }
+}
+
+.margin {
+
+  &-top {
+    &-0 {
+      margin-top: 0;
+    }
+    &-20 {
+      margin-top: 20px;
+    }
+    &-30 {
+      margin-top: 30px;
+    }
+    &-40 {
+      margin-top: 40px;
+    }
+  }
+  &-bottom {
+    &-0 {
+      margin-bottom: 0;
+    }
+    &-20 {
+      margin-bottom: 20px;
+    }
+    &-30 {
+      margin-bottom: 30px;
+    }
+    &-40 {
+      margin-bottom: 40px;
+    }
+  }
+  &-left {
+    &-0 {
+      margin-left: 0;
+    }
+  }
+  &-right {
+    &-0 {
+      margin-right: 0;
+    }
+  }
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.shadow {
+  box-shadow: 0 0 25px 3px rgba(79, 79, 79, 0.5);
+}
+.selectpicker {
+  margin: 3px 0;
+  width: 100%;
+  padding-left: 20px;
+}

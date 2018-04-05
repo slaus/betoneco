@@ -1,0 +1,88 @@
+/*!
+ * Footer content
+ */
+
+.footer {
+
+  &-social {
+    & a {
+      display: inline-block;
+      width: 27px;
+      height: 27px;
+      background-color: #2ba8e2;
+      background-image: linear-gradient(to top, #4ab9ed 0%, #2ba8e2 100%);
+      box-shadow: 0 0 9px 1px rgba(44, 169, 226, 0.4);
+
+      &:hover {
+        background-image: linear-gradient(to top, #2ba8e2 0%, #4ab9ed 100%);
+      }
+      
+      &.vk {
+        background: #2ba8e2 url("../images/vk.png") center center;
+        &:hover {
+          background-color: #4ab9ed;
+        }
+      }
+      &.fb {
+        background: #2ba8e2 url("../images/fb.png") center center;
+        &:hover {
+          background-color: #4ab9ed;
+        }
+      }
+      &.in {
+        background: #2ba8e2 url("../images/in.png") center center;
+        &:hover {
+          background-color: #4ab9ed;
+        }
+      }
+    }
+  }
+
+  &-address {
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding-left: 50px;
+  }
+  &-tel {
+    background: url("../images/tel.png") top left no-repeat;
+  }
+  &-pointer {
+    background: url("../images/pointer.jpg") top left no-repeat;
+  }
+
+  &-menu {
+    list-style: none;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0;
+    margin: 0 auto 20px;
+
+    & li {
+      display: inline-block;
+
+      & a {
+        padding: 5px 30px;
+        display: block;
+
+        @media screen and (max-width: 767px) {
+          padding: 5px;
+        }
+      }
+    }
+  }
+
+  &-copyright {
+    min-height: 120px;;
+    background: $black;
+    color: $white;
+    font-size: 16px;
+    padding: 20px;
+
+    & a {
+      color: inherit;
+    }
+  }
+}
