@@ -1,4 +1,3 @@
-//Scripts
 jQuery(function ($) {
 
 //Catalogue menu
@@ -92,6 +91,17 @@ jQuery(function ($) {
             }
         });
 
+    //Masonry
+    $(window).on('load', function() {
+
+        $('.masonry').masonry({
+            columnWidth : '.grid-sizer',
+            gutter : 15,
+            itemSelector : '.masonry-item',
+            percentPosition : 'true',
+            fitWidth: true,
+        });
+
+    });
+
 });
-
-

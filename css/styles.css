@@ -13,6 +13,9 @@
 /*!
  * Body content
  */
+* {
+  box-sizing: border-box; }
+
 body {
   padding: 0;
   margin: 0;
@@ -725,6 +728,84 @@ h2.title {
     .slider-button .catalogue-button span {
       font-size: 22px;
       padding-left: 20px; }
+
+.masonry {
+  clear: both; }
+  .masonry .masonry-item {
+    padding: 1em;
+    margin: 0 auto .8em auto;
+    overflow: hidden;
+    z-index: 1;
+    text-decoration: none;
+    transition: all 120ms ease; }
+    .masonry .masonry-item:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      transform: scale(0);
+      opacity: 0;
+      transition: all 100ms ease; }
+    .masonry .masonry-item.catalogue-item:hover .catalogue-img:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      z-index: 1; }
+    .masonry .masonry-item .catalogue-title {
+      color: #2ba8e2;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 32px;
+      font-variant: small-caps;
+      margin-top: 0;
+      margin-bottom: 20px;
+      width: calc(100% - 120px);
+      display: block;
+      float: right; }
+    .masonry .masonry-item .catalogue-img {
+      width: 100px;
+      float: left; }
+    .masonry .masonry-item .description {
+      float: right;
+      display: inline-block;
+      width: calc(100% - 120px);
+      line-height: 25px;
+      margin-bottom: 20px; }
+    .masonry .masonry-item .link-block {
+      display: block;
+      clear: both;
+      padding-left: 30px;
+      margin-top: 20px; }
+      .masonry .masonry-item .link-block a {
+        display: table;
+        color: #2ba8e2;
+        border-bottom: 1px dashed transparent;
+        line-height: 18px;
+        margin-bottom: 10px; }
+        .masonry .masonry-item .link-block a:hover {
+          text-decoration: none;
+          color: #4ab9ed; }
+  .masonry .grid-sizer, .masonry .masonry-item {
+    width: calc(50% - 20px); }
+    @media screen and (max-width: 749px) {
+      .masonry .grid-sizer, .masonry .masonry-item {
+        width: calc(100% - 20px); } }
+
+.breadcrumbs-block {
+  margin-top: 20px; }
+  .breadcrumbs-block a {
+    color: #2ba8e2; }
+    .breadcrumbs-block a:hover {
+      text-decoration: none;
+      color: #4ab9ed; }
 
 /*!
  * Footer content
