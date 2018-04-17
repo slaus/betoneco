@@ -416,7 +416,8 @@ a {
 .catalogue {
   background: #dddede url("../images/bg.jpg") center center;
   background-size: cover;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 60px;
   position: relative; }
   .catalogue-block {
     height: 100%;
@@ -526,8 +527,7 @@ a {
         line-height: 22px; } }
   .catalogue-button {
     display: block;
-    width: 100%;
-    max-width: 200px;
+    width: 200px;
     height: 42px;
     line-height: 45px;
     background-color: #2ba8e2;
@@ -777,8 +777,9 @@ h2.title {
       float: right;
       display: inline-block;
       width: calc(100% - 120px);
-      line-height: 25px;
-      margin-bottom: 20px; }
+      line-height: 22px;
+      margin-bottom: 20px;
+      font-size: 20px; }
     .masonry .masonry-item .link-block {
       display: block;
       clear: both;
@@ -789,7 +790,8 @@ h2.title {
         color: #2ba8e2;
         border-bottom: 1px dashed transparent;
         line-height: 18px;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        font-size: 20px; }
         .masonry .masonry-item .link-block a:hover {
           text-decoration: none;
           color: #4ab9ed; }
@@ -800,12 +802,154 @@ h2.title {
         width: calc(100% - 20px); } }
 
 .breadcrumbs-block {
-  margin-top: 20px; }
+  margin-top: 20px;
+  font-size: 18px; }
   .breadcrumbs-block a {
     color: #2ba8e2; }
     .breadcrumbs-block a:hover {
       text-decoration: none;
       color: #4ab9ed; }
+
+.price-button {
+  height: 50px; }
+
+.table-block {
+  font-size: 18px;
+  margin: 20px 0;
+  display: block; }
+  .table-block .table {
+    margin-top: 20px; }
+  .table-block .table > thead {
+    background: #2ba8e2;
+    border: none;
+    color: #fff;
+    text-transform: uppercase; }
+    .table-block .table > thead > tr > th {
+      text-align: center; }
+  .table-block .table > tbody > tr > td,
+  .table-block .table > tbody > tr > th,
+  .table-block .table > tfoot > tr > td,
+  .table-block .table > tfoot > tr > th,
+  .table-block .table > thead > tr > td,
+  .table-block .table > thead > tr > th {
+    line-height: 1; }
+    .table-block .table > tbody > tr > td:last-child,
+    .table-block .table > tbody > tr > th:last-child,
+    .table-block .table > tfoot > tr > td:last-child,
+    .table-block .table > tfoot > tr > th:last-child,
+    .table-block .table > thead > tr > td:last-child,
+    .table-block .table > thead > tr > th:last-child {
+      width: 80px; }
+      @media screen and (max-width: 991px) {
+        .table-block .table > tbody > tr > td:last-child,
+        .table-block .table > tbody > tr > th:last-child,
+        .table-block .table > tfoot > tr > td:last-child,
+        .table-block .table > tfoot > tr > th:last-child,
+        .table-block .table > thead > tr > td:last-child,
+        .table-block .table > thead > tr > th:last-child {
+          width: auto; } }
+    .table-block .table > tbody > tr > td:nth-last-child(2),
+    .table-block .table > tbody > tr > th:nth-last-child(2),
+    .table-block .table > tfoot > tr > td:nth-last-child(2),
+    .table-block .table > tfoot > tr > th:nth-last-child(2),
+    .table-block .table > thead > tr > td:nth-last-child(2),
+    .table-block .table > thead > tr > th:nth-last-child(2) {
+      width: 160px; }
+      @media screen and (max-width: 991px) {
+        .table-block .table > tbody > tr > td:nth-last-child(2),
+        .table-block .table > tbody > tr > th:nth-last-child(2),
+        .table-block .table > tfoot > tr > td:nth-last-child(2),
+        .table-block .table > tfoot > tr > th:nth-last-child(2),
+        .table-block .table > thead > tr > td:nth-last-child(2),
+        .table-block .table > thead > tr > th:nth-last-child(2) {
+          width: auto; } }
+    @media screen and (max-width: 689px) {
+      .table-block .table > tbody > tr > td:nth-child(3),
+      .table-block .table > tbody > tr > th:nth-child(3),
+      .table-block .table > tfoot > tr > td:nth-child(3),
+      .table-block .table > tfoot > tr > th:nth-child(3),
+      .table-block .table > thead > tr > td:nth-child(3),
+      .table-block .table > thead > tr > th:nth-child(3) {
+        display: none; } }
+  @media screen and (max-width: 689px) {
+    .table-block .table > tbody > tr > td {
+      font-size: 16px; } }
+  .table-block .table {
+    margin-left: 30px;
+    width: calc(100% - 30px);
+    max-width: calc(100% - 30px); }
+    .table-block .table.no-border > tbody > tr > td,
+    .table-block .table.no-border > tbody > tr > th,
+    .table-block .table.no-border > tfoot > tr > td,
+    .table-block .table.no-border > tfoot > tr > th,
+    .table-block .table.no-border > thead > tr > td,
+    .table-block .table.no-border > thead > tr > th {
+      border-top: 0; }
+      .table-block .table.no-border > tbody > tr > td input,
+      .table-block .table.no-border > tbody > tr > th input,
+      .table-block .table.no-border > tfoot > tr > td input,
+      .table-block .table.no-border > tfoot > tr > th input,
+      .table-block .table.no-border > thead > tr > td input,
+      .table-block .table.no-border > thead > tr > th input {
+        height: 42px;
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 100px;
+        min-width: 40px; }
+        @media screen and (max-width: 991px) {
+          .table-block .table.no-border > tbody > tr > td input,
+          .table-block .table.no-border > tbody > tr > th input,
+          .table-block .table.no-border > tfoot > tr > td input,
+          .table-block .table.no-border > tfoot > tr > th input,
+          .table-block .table.no-border > thead > tr > td input,
+          .table-block .table.no-border > thead > tr > th input {
+            height: 25px;
+            max-width: 50px; } }
+      @media screen and (max-width: 991px) {
+        .table-block .table.no-border > tbody > tr > td .catalogue-button,
+        .table-block .table.no-border > tbody > tr > th .catalogue-button,
+        .table-block .table.no-border > tfoot > tr > td .catalogue-button,
+        .table-block .table.no-border > tfoot > tr > th .catalogue-button,
+        .table-block .table.no-border > thead > tr > td .catalogue-button,
+        .table-block .table.no-border > thead > tr > th .catalogue-button {
+          height: 25px;
+          max-width: 60px;
+          line-height: 26px; } }
+      .table-block .table.no-border > tbody > tr > td label,
+      .table-block .table.no-border > tbody > tr > th label,
+      .table-block .table.no-border > tfoot > tr > td label,
+      .table-block .table.no-border > tfoot > tr > th label,
+      .table-block .table.no-border > thead > tr > td label,
+      .table-block .table.no-border > thead > tr > th label {
+        margin-left: 10px;
+        margin-right: 10px; }
+    .table-block .table.price tr {
+      display: table-row;
+      width: 100%;
+      border-top: 1px solid #ddd; }
+    .table-block .table.price td {
+      vertical-align: middle; }
+    .table-block .table.price .catalogue-button {
+      margin-top: 0;
+      color: #fff;
+      width: 70px; }
+    .table-block .table a {
+      color: #2ba8e2; }
+      .table-block .table a:hover {
+        color: #4ab9ed;
+        text-decoration: none; }
+
+.buy-block {
+  display: inline-block; }
+  .buy-block input {
+    height: 42px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 100px;
+    min-width: 40px; }
+  .buy-block label {
+    margin-left: 10px;
+    margin-right: 10px; }
 
 /*!
  * Footer content

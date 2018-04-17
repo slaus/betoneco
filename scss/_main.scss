@@ -63,7 +63,8 @@
 .catalogue {
   background: #dddede url("../images/bg.jpg") center center;
   background-size: cover;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 60px;
   position: relative;
 
   &-block {
@@ -201,8 +202,7 @@
   }
   &-button {
     display: block;
-    width: 100%;
-    max-width: 200px;
+    width: 200px;
     height: 42px;
     line-height: 45px;
     background-color: $blue;
@@ -522,8 +522,9 @@ h2.title {
       float: right;
       display: inline-block;
       width: calc(100% - 120px);
-      line-height: 25px;
+      line-height: 22px;
       margin-bottom: 20px;
+      font-size: 20px;
     }
     & .link-block {
       display: block;
@@ -537,6 +538,7 @@ h2.title {
         border-bottom: 1px dashed transparent;
         line-height: 18px;
         margin-bottom: 10px;
+        font-size: 20px;
 
         &:hover {
           text-decoration: none;
@@ -559,6 +561,7 @@ h2.title {
   
   &-block {
     margin-top: 20px;
+    font-size: 18px;
     
     & a {
       color: $blue;
@@ -567,6 +570,154 @@ h2.title {
         text-decoration: none;
         color: $blue-light;
       }
+    }
+  }
+}
+.price-button {
+  height: 50px;
+}
+.table-block {
+  font-size: 18px;
+  margin: 20px 0;
+  display: block;
+
+  & .table {
+    margin-top: 20px;
+  }
+  
+  & .table > thead {
+    background: $blue;
+    border: none;
+    color: $white;
+    text-transform: uppercase;
+
+    & > tr > th {
+      text-align: center;
+    }
+  }
+
+  & .table>tbody>tr>td,
+  & .table>tbody>tr>th,
+  & .table>tfoot>tr>td,
+  & .table>tfoot>tr>th,
+  & .table>thead>tr>td,
+  & .table>thead>tr>th {
+    line-height: 1;
+
+    &:last-child {
+      width: 80px;
+
+      @media screen and (max-width: 991px) {
+        width: auto;
+      }
+    }
+    &:nth-last-child(2) {
+      width: 160px;
+
+      @media screen and (max-width: 991px) {
+        width: auto;
+      }
+    }
+    &:nth-child(3) {
+
+      @media screen and (max-width: 689px) {
+        display: none;
+      }
+    }
+  }
+
+  & .table>tbody>tr>td {
+
+    @media screen and (max-width: 689px) {
+      font-size: 16px;
+    }
+  }
+
+  & .table {
+    margin-left: 30px;
+    width: calc(100% - 30px);
+    max-width: calc(100% - 30px);
+
+    &.no-border>tbody>tr>td,
+    &.no-border>tbody>tr>th,
+    &.no-border>tfoot>tr>td,
+    &.no-border>tfoot>tr>th,
+    &.no-border>thead>tr>td,
+    &.no-border>thead>tr>th {
+      border-top: 0;
+
+      & input {
+        height: 42px;
+        padding-left: 10px;
+        padding-right: 10px;
+        max-width: 100px;
+        min-width: 40px;
+
+        @media screen and (max-width: 991px) {
+          height: 25px;
+          max-width: 50px;
+        }
+      }
+
+      & .catalogue-button {
+
+        @media screen and (max-width: 991px) {
+          height: 25px;
+          max-width: 60px;
+          line-height: 26px;
+        }
+      }
+
+      & label {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+
+    &.price {
+
+      & tr {
+        display: table-row;
+        width: 100%;
+        border-top: 1px solid #ddd;
+      }
+      & td {
+        vertical-align: middle;
+      }
+      & .catalogue-button {
+        margin-top: 0;
+        color: $white;
+        width: 70px;
+      }
+    }
+
+    & a {
+      color: $blue;
+
+      &:hover {
+        color: $blue-light;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.buy {
+
+  &-block {
+    display: inline-block;
+
+    & input {
+      height: 42px;
+      padding-left: 10px;
+      padding-right: 10px;
+      max-width: 100px;
+      min-width: 40px;
+    }
+
+    & label {
+      margin-left: 10px;
+      margin-right: 10px;
     }
   }
 }
