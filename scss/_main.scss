@@ -590,10 +590,6 @@ h2.title {
     border: none;
     color: $white;
     text-transform: uppercase;
-
-    & > tr > th {
-      text-align: center;
-    }
   }
 
   & .table>tbody>tr>td,
